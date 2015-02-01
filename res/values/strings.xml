@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+  
+    <!-- nama aplikasi. -->  
+    <string name="nama_aplikasi">Indo-Jawa Dict</string>  
+  
+    <!-- label yg muncul(merek) -->  
+    <string name="namaLabelNya">Indo-Jawa Dict</string>  
+  
+    <!-- tulisan yg muncul pada kotak cari. -->  
+    <string name="tulisanDiKotakCari">Type Here</string>  
+  
+    <!-- untuk menu. -->  
+    <string name="menu_cari">Cari---</string>  
+  
+    <!-- akan terlihat di search settings utk kode ini.  -->  
+    <string name="artinya">Arti Kata</string>  
+  
+    <!-- instruksi pada halaman utama. -->  
+    <string name="instruksi_utama">Kamus Indonesia - Jawa</string>  
+  
+    <!-- akan di tunjukan di atas hasil pencarian -->  
+    <plurals name="hasil_pencarian">  
+      <item quantity="one">%1$d result for \"%2$s\": </item>  
+      <item quantity="other">%1$d results for \"%2$s\": </item>  
+    </plurals>  
+  
+    <!-- ketika pencarian gagal -->  
+    <string name="tak_ada_hasil">Tak ada \"%s\" dalam database</string>  
+  
+</resources>

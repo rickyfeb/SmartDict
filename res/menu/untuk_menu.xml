@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>  
+  
+<!-- menu utk cari dan TampilanKata.-->  
+<menu xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item android:id="@+id/cari"  
+          android:title="@string/menu_cari"  
+          android:icon="@drawable/ic_menu_search"  
+          android:showAsAction="ifRoom"  
+          android:actionViewClass="android.widget.SearchView" />  
+</menu>

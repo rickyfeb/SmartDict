@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"  
+        package="com.nicoagusto.smartdict"  
+        android:versionCode="2"  
+        android:versionName="2.0">  
+  
+    <uses-sdk android:minSdkVersion="15" />  
+  
+    <application android:label="@string/nama_aplikasi"  
+                 android:icon="@drawable/ic_dictionary">  
+  
+        <!-- class utama untuk masuk ke aplikasi. -->  
+        <activity android:name=".MainActivity"  
+                  android:launchMode="singleTop">  
+  
+            <intent-filter>  
+                <action android:name="android.intent.action.MAIN" />  
+                <category android:name="android.intent.category.LAUNCHER" />  
+            </intent-filter>  
+  
+            <!-- yang menerima pencarian. -->  
+            <intent-filter>  
+                <action android:name="android.intent.action.SEARCH" />  
+                <!-- kategori tak di perlukan,  karena Intent akan menjelaskan-nya pada  
+                     komponen pada class ini  
+                     -->  
+            </intent-filter>  
+  
+            <!-- mengarahkan ke  meta data pencarian. -->  
+            <meta-data android:name="android.app.searchable"  
+                       android:resource="@xml/data_untuk_pencarian" />  
+  
+        </activity>  
+  
+        <!-- menampilkan arti kata. -->  
+        <activity android:name=".TampilanKata" />  
+  
+        <!-- menyediakan perkiraan kata2 apa yang kira2 di cari -->   
+        <provider android:name=".PenghubungData"  
+                  android:authorities="com.nicoagusto.smartdict.PenghubungData" />  
+  
+        <!-- mengarahkan ke aktivitas cari agar aplikasi menghidupkan kegiatan pencarian. -->  
+        <meta-data android:name="android.app.default_searchable"  
+                   android:value=".MainActivity" />  
+  
+    </application>  
+</manifest>
